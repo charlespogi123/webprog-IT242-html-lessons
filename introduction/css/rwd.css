@@ -12,6 +12,7 @@ body {
   grid-template-areas:
     'header'
     'menu'
+    'about_me'
     'main'
     'facts'
     'footer';
@@ -64,6 +65,21 @@ body {
   margin-bottom: 7px;
 }
 
+.about_me {
+  grid-area: facts;
+  border: 1px solid #0099cc;
+  background-color: rgb(225, 138, 207);
+  padding: 10px;
+}
+
+.about_me > h2 {
+  font-size: 20px;
+}
+
+.about_me li {
+  margin-bottom: 5px;
+}
+
 .facts {
   grid-area: facts;
   border: 1px solid #0099cc;
@@ -89,6 +105,7 @@ body {
 @media (min-width: 600px) {
   .header {grid-area: 1 / span 6;}
   .menu {grid-area: 2 / span 1;}
+  .about_me {grid-area: 2 / span 1;}
   .content {grid-area: 2 / span 4;}
   .facts {grid-area: 3 / span 6;}
   .footer {grid-area: 4 / span 6;}
@@ -97,7 +114,9 @@ body {
 @media (min-width: 768px) {
   .header {grid-area: 1 / span 6;}
   .menu {grid-area: 2 / span 1;}
+  .about_me {grid-area: 2 / span 1;}
   .content {grid-area: 2 / span 4;}
   .facts {grid-area: 2 / span 1;}
   .footer {grid-area: 3 / span 6;}
 }
+
