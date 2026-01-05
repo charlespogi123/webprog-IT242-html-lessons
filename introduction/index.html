@@ -1,72 +1,133 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-     <link rel="stylesheet" href="css/flexbox.css">
-<title>WEBPROG BSIT-242</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Charles Capagngan | Portfolio</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<h1>Personal Profile Web page </h1>
-<p>
-    <b>
-Im Cristian.<br>
-Asia Pacific College<br>
-Course: BSIT- 242 <br>
-IT Experience: html and css<br>
-Hobbies & Interest: Playing online game with my friends<br>
-Goals In Life / Dream:to be rich <br>
-</b>
 
-<img src="https://media.licdn.com/dms/image/v2/D5603AQFpB9rCFiMUyw/profile-displayphoto-scale_200_200/B56ZqnKlsOKwAc-/0/1763741163274?e=2147483647&v=beta&t=vi0oROWu351SApec0r5CoHkB6NCjI2s3b4KE2pWIg-U" alt="Girl with a jacket" width="500" height="600">
-</p>
+  <nav>
+    <h1>Charles Capagngan | Portfolio</h1>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#goalsinlife">Goals in Life</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
 
-<div class="header">
-  <h1>Responsive Image Gallery of jared and Charles</h1>
-  <p>Resize the browser window to see the responsive effect.</p>
-</div>
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <img src="assets/photo.jpg" alt="Charles Capagngan" class="profile-pic">
+      <div class="hero-text">
+        <h2>Hi, I'm <span id="dynamic-name"></span>!</h2>
+        <p>IT Student | Aspiring Cybersecurity</p>
+        <a href="#projects" class="btn">View My Work</a>
+      </div>
+    </div>
+  </section>
 
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      Second Year IT student based in Makati. 
+      <br>
+      Strong interest in Cybersecurity, Particularly in Blue Teaming.
+      <br>
+      Outside, i like to hangout with my friends and those that are close around me.
+      <br>
+      I also like to explore and enhance my overall skills.
+    </p>
+  </section>
 
+  <section id="goalsinlife">
+    <h2>Goals in Life</h2>
+    <div class="container">
+      <div class="dropdown-container">
+        <div class="dropdown">
+          <button class="dropdown-button" onclick="toggleDropdown('desc1')">
+            <img src="assets/airplane.jpg" alt="airplane" class="photo">
+            <span class="button-title">Travel</span>
+          </button>
+          <div id="desc1" class="dropdown-content">
+            <p>I would like to someday travel around the world to see the beauties of the nature.</p>
+          </div>
+        </div>
 
- <div class="container"> 
-  <div class="column">
-    <img src="https://tse4.mm.bing.net/th/id/OIP.gJ-ZwX3V3r2IXmVOP93PVgAAAA?rs=1&pid=ImgDetMain&o=7&rm=3" style="width:100%">
-    <img src="https://tse4.mm.bing.net/th/id/OIP.gJ-ZwX3V3r2IXmVOP93PVgAAAA?rs=1&pid=ImgDetMain&o=7&rm=3" style="width:100%">
-    <img src="https://tse4.mm.bing.net/th/id/OIP.gJ-ZwX3V3r2IXmVOP93PVgAAAA?rs=1&pid=ImgDetMain&o=7&rm=3" style="width:100%">
-    <img src="https://tse4.mm.bing.net/th/id/OIP.gJ-ZwX3V3r2IXmVOP93PVgAAAA?rs=1&pid=ImgDetMain&o=7&rm=3" style="width:100%">
-    <img src="https://tse4.mm.bing.net/th/id/OIP.gJ-ZwX3V3r2IXmVOP93PVgAAAA?rs=1&pid=ImgDetMain&o=7&rm=3" style="width:100%">
-    <img src="https://tse4.mm.bing.net/th/id/OIP.gJ-ZwX3V3r2IXmVOP93PVgAAAA?rs=1&pid=ImgDetMain&o=7&rm=3" style="width:100%">
-    <img src="https://tse4.mm.bing.net/th/id/OIP.gJ-ZwX3V3r2IXmVOP93PVgAAAA?rs=1&pid=ImgDetMain&o=7&rm=3" style="width:100%">
-  </div>
-  
-   <div class="column">
-    <img src="https://tse4.mm.bing.net/th/id/OIP.gJ-ZwX3V3r2IXmVOP93PVgAAAA?rs=1&pid=ImgDetMain&o=7&rm=3" style="width:100%">
-    <img src="https://tse4.mm.bing.net/th/id/OIP.gJ-ZwX3V3r2IXmVOP93PVgAAAA?rs=1&pid=ImgDetMain&o=7&rm=3" style="width:100%">
-    <img src="https://tse4.mm.bing.net/th/id/OIP.gJ-ZwX3V3r2IXmVOP93PVgAAAA?rs=1&pid=ImgDetMain&o=7&rm=3" style="width:100%">
-    <img src="https://tse4.mm.bing.net/th/id/OIP.gJ-ZwX3V3r2IXmVOP93PVgAAAA?rs=1&pid=ImgDetMain&o=7&rm=3" style="width:100%">
-    <img src="https://tse4.mm.bing.net/th/id/OIP.gJ-ZwX3V3r2IXmVOP93PVgAAAA?rs=1&pid=ImgDetMain&o=7&rm=3" style="width:100%">
-    <img src="https://tse4.mm.bing.net/th/id/OIP.gJ-ZwX3V3r2IXmVOP93PVgAAAA?rs=1&pid=ImgDetMain&o=7&rm=3" style="width:100%">
-    <img src="https://tse4.mm.bing.net/th/id/OIP.gJ-ZwX3V3r2IXmVOP93PVgAAAA?rs=1&pid=ImgDetMain&o=7&rm=3" style="width:100%">
-  </div>
+        <div class="dropdown">
+          <button class="dropdown-button" onclick="toggleDropdown('desc2')">
+            <img src="assets/money.jpg" alt="money" class="photo">
+            <span class="button-title">Financial Freedom</span>
+          </button>
+          <div id="desc2" class="dropdown-content">
+            <p>To be financially stable is the goal in my life. Not rich, but just enough to be able to enjoy life to the fullest.</p>
+          </div>
+        </div>
 
-  <div class="column">
-    <img src="https://tse1.mm.bing.net/th/id/OIP.gbCwCpUr1rjCB6SxZuSs8AAAAA?rs=1&pid=ImgDetMain&o=7&rm=3" style="width:100%">
-    <img src="https://tse1.mm.bing.net/th/id/OIP.gbCwCpUr1rjCB6SxZuSs8AAAAA?rs=1&pid=ImgDetMain&o=7&rm=3" style="width:100%">
-    <img src="https://tse1.mm.bing.net/th/id/OIP.gbCwCpUr1rjCB6SxZuSs8AAAAA?rs=1&pid=ImgDetMain&o=7&rm=3" style="width:100%">
-    <img src="https://tse1.mm.bing.net/th/id/OIP.gbCwCpUr1rjCB6SxZuSs8AAAAA?rs=1&pid=ImgDetMain&o=7&rm=3" style="width:100%">
-    <img src="https://tse1.mm.bing.net/th/id/OIP.gbCwCpUr1rjCB6SxZuSs8AAAAA?rs=1&pid=ImgDetMain&o=7&rm=3" style="width:100%">
-    <img src="https://tse1.mm.bing.net/th/id/OIP.gbCwCpUr1rjCB6SxZuSs8AAAAA?rs=1&pid=ImgDetMain&o=7&rm=3" style="width:100%">
-    <img src="https://tse1.mm.bing.net/th/id/OIP.gbCwCpUr1rjCB6SxZuSs8AAAAA?rs=1&pid=ImgDetMain&o=7&rm=3" style="width:100%">
-  </div>
-  
+        <div class="dropdown">
+          <button class="dropdown-button" onclick="toggleDropdown('desc3')">
+            <img src="assets/retire.jpg" alt="retirement" class="photo">
+            <span class="button-title">Early Retirement</span>
+          </button>
+          <div id="desc3" class="dropdown-content">
+            <p>To retire early in life is one of the biggest goal that i may achieve. Being able to enjoy life while also enjoying the youth.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-  <div class="column">
-    <img src="https://tse1.mm.bing.net/th/id/OIP.gbCwCpUr1rjCB6SxZuSs8AAAAA?rs=1&pid=ImgDetMain&o=7&rm=3" style="width:100%">
-    <img src="https://tse1.mm.bing.net/th/id/OIP.gbCwCpUr1rjCB6SxZuSs8AAAAA?rs=1&pid=ImgDetMain&o=7&rm=3" style="width:100%">
-    <img src="https://tse1.mm.bing.net/th/id/OIP.gbCwCpUr1rjCB6SxZuSs8AAAAA?rs=1&pid=ImgDetMain&o=7&rm=3" style="width:100%">
-    <img src="https://tse1.mm.bing.net/th/id/OIP.gbCwCpUr1rjCB6SxZuSs8AAAAA?rs=1&pid=ImgDetMain&o=7&rm=3" style="width:100%">
-    <img src="https://tse1.mm.bing.net/th/id/OIP.gbCwCpUr1rjCB6SxZuSs8AAAAA?rs=1&pid=ImgDetMain&o=7&rm=3" style="width:100%">
-    <img src="https://tse1.mm.bing.net/th/id/OIP.gbCwCpUr1rjCB6SxZuSs8AAAAA?rs=1&pid=ImgDetMain&o=7&rm=3" style="width:100%">
-    <img src="https://tse1.mm.bing.net/th/id/OIP.gbCwCpUr1rjCB6SxZuSs8AAAAA?rs=1&pid=ImgDetMain&o=7&rm=3" style="width:100%">
-  </div>
-  
+  <section id="experience">
+    <h2>IT Experience</h2>
+    <div class="card">
+      <h3>Networking</h3>
+      <span>2024 (DNETCOM)</span>
+      <p>Configuration and setups of networks.</p>
+    </div>
+    <div class="card">
+      <h3>Operating System</h3>
+      <span>2024-2025 (OPESYS)</span>
+      <p>Bash commands and IAM in Ubuntu Linux.</p>
+    </div>
+    <div class="card">
+      <h3>Python</h3>
+      <span>2024 (DATASTRUC)</span>
+      <p>Algorithms and Functions.</p>
+    </div>
+    <div class="card">
+      <h3>Website Programming</h3>
+      <span>Currently (WEBPROG)</span>
+      <p>Currently learning how creating a website works.</p>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+
+    <div class="project">
+      <h3>Quickly Aid</h3>
+      <p>An emergency incident reporter in mobile phone</p>
+      <span>Kotlin • Java • Firebase</span>
+    </div>
+
+    <div class="project">
+      <h3>Shuttle Ticketing System</h3>
+      <p>A shuttle ticketing system for Asia Pacific College</p>
+      <span>HTML • CSS • JS • Python</span>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Me!</h2>
+    <p>Email: cbcapagngan2@student.apc.edu.ph</p>
+    <p>GitHub: github.com/charlespogi123</p>
+    <p>LinkedIn: linkedin.com/in/charles-capagngan-55286924a</p>
+  </section>
+
+  <script src="js/script.js"></script>
 </body>
 </html>
