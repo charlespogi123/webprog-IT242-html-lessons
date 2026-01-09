@@ -6,7 +6,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   });
 });
 
-const names = ["Charles", "Catenko", "clrs", "Papito", "Ihi ng Manok"];
+const names = ["Charles", "Catenko", "clrs"];
 const nameElement = document.getElementById("dynamic-name");
 let nameIndex = 0;
 let charIndex = 0;
